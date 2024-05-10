@@ -1,0 +1,60 @@
+body {
+    font-family: "Arial", sans-serif;
+    background: rgb(14, 35, 26);
+    background: radial-gradient(circle, rgba(14, 35, 26, 1) 0%, rgba(10, 28, 25, 1) 35%, rgba(0, 10, 21, 1) 66%, rgba(0, 5, 24, 1) 94%, rgba(0, 5, 23, 1) 100%, rgba(0, 5, 24, 1) 100%, rgba(0, 10, 21, 1) 100%);
+}
+
+.container {
+    width: 100vh;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bolder;
+    color: white;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 0 auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.cell:hover {
+    cursor: pointer;
+}
+
+.game-status {
+    margin: 2rem 0px;
+}
+
+#restart-btn {
+    margin: 2rem;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid grey;
+}
+
+#restart-btn:hover {
+    cursor: pointer;
+    border: 2px solid #FA3E3A;
+}
